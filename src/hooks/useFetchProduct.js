@@ -14,7 +14,7 @@ const useFetchProduct = (query, page, siteId) => {
       setError(null);
       try {
         const res =
-          await fetch(`http://api.searchspring.net/api/search/search.json?siteId=${siteId}&q=${encodeURIComponent(
+          await fetch(`https://api.searchspring.net/api/search/search.json?siteId=${siteId}&q=${encodeURIComponent(
             query
           )}&resultsFormat=native&page=${page}
                   `);

@@ -1,0 +1,121 @@
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.productImage img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.productDetail {
+  text-align: center;
+  margin-top: 10px;
+}
+.msrpClass {
+  text-decoration: line-through;
+  color: red;
+}
+
+.suggestionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 200px;
+  z-index: 99;
+}
+.suggestionList li {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestionList li:hover {
+  background-color: #eee;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.searchComponent input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+}
+
+.searchComponent button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchComponent button:hover {
+  background-color: #0056b3;
+}
+
+.buttonHandle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonHandle button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonHandle button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.buttonHandle span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar select {
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

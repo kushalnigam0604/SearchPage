@@ -1,10 +1,16 @@
 import React from "react";
 
-const ProductCard = ({ productDetails }) => {
+const ProductCard = ({ productDetails, index }) => {
+  const loadingType = index < 4 ? "eager" : "lazy";
+
   return (
     <div className="productCard">
       <div className="productImage">
-        <img src={productDetails?.imageUrl} alt="" />
+        <img
+          src={productDetails?.imageUrl}
+          alt={productDetails?.name}
+          loading={loadingType}
+        />
       </div>
       <div className="productDetail">
         <p>{productDetails?.name}</p>
